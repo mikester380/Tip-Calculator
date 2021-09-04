@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <img src="images/logo.svg" alt="logo" class="logo">
+
+  <div class="container">
+
+    <div class="tip-calculator">
+
+      <p class="sub-heading">
+        Bill
+      </p>
+      <input type="number" class="bill full-width">
+
+      <p class="sub-heading">
+        Select Tip %
+      </p>
+
+      <div class="default-percentage">
+        <button class="default-tip">5%</button>
+        <button class="default-tip">10%</button>
+        <button class="default-tip">15%</button>
+        <button class="default-tip">25%</button>
+        <button class="default-tip">50%</button>
+        <input type="number" placeholder="Custom" class="custom-btn">
+      </div>
+
+      <div class="numofpeopleheading">
+        <p class="sub-heading">
+          Number of People
+        </p>
+        <span id="error">can't be zero</span>
+      </div>
+      <input type="number" class="numofpeopleinput full-width">
+
+    </div>
+
+    <div class="result">
+
+      <div class="flex">
+        <div>
+          <p>
+            Tip Amount
+          </p>
+          <span>/ person</span>
+        </div>
+        <p class="value">
+          $<span class="tip-per-person"></span>
+        </p>
+
+        <div>
+          <p>
+            Total
+          </p>
+          <span>/ person</span>
+        </div>
+        <p class="value">
+          $<span class="total-per-person"></span>
+        </p>
+      </div>
+
+      <button class="reset">Reset</button>
+    </div>
+
+  </div>
+
+  <!--
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    -->
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
